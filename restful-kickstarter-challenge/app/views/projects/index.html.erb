@@ -1,0 +1,9 @@
+<ol>
+<% @projects.each do |project| %>
+  <li>
+    <h1>Title: <%= project.title %></h1>
+    <h2>Description: <%= project.description %></h2>
+    <p>By: <%= project.owner + " - Age: " + project.owner_age.to_s %></p>
+  </li>
+<% end %>
+</ol>
