@@ -1,3 +1,7 @@
-  <h1><u><%= @project.title %></u><h1>
-  <h2><%= @project.description %></h2>
-  <p><%= @project.owner + " - Age: " + @project.owner_age.to_s %></p>
+<h1><u><%= @project.title %></u><h1>
+<h2><%= @project.description %></h2>
+<p><%= @project.owner + " - Age: " + @project.owner_age.to_s %></p>
+
+<p><%= button_to "Edit Info", edit_project_path(@project), method: :get %></p>
+<p><%= button_to "Delete Account", @project, method: :delete %></p>
+<p><%= button_to "View All", projects_path, method: :get %></p>
